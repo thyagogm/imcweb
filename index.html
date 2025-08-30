@@ -1,0 +1,43 @@
+<!-- Crie um arquivo HTML com a seguinte estrutura:
+     Dois campos de input: um para o peso (em quilogramas) e outro para a altura (em metros).
+     Um botão com o texto "Calcular".
+     Uma tag <p> para exibir o valor do IMC calculado.
+     Uma tag <p> adicional para exibir a classificação do IMC (ex: "Abaixo do peso", "Peso normal", "Sobrepeso", etc.).-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculoIMC.js"></script>
+</head>
+<body>
+    <header>
+        <nav><h1>Calculo IMC</h1></nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Calcule Agora</h2>
+                <p>Bem-vindo à nossa calculadora de IMC! Aqui você pode descobrir rapidamente seu Índice de Massa Corporal e ter uma ideia geral sobre seu peso em relação à altura.
+                Insira seu peso e altura, e veja o resultado instantaneamente.
+                O IMC é uma referência simples para acompanhar a saúde, mas não substitui a avaliação de um profissional.
+                Use esta ferramenta como guia para manter hábitos saudáveis e acompanhar seu bem-estar.</p>
+                <section>
+                    <label for="peso">Peso:</label>
+                    <input type="number" id="peso" name="peso" min="1" max="500" step="0.1" placeholder="Exemplo: 70.5" required>
+                    <label for="altura">Altura:</label>
+                    <input type="number" id="altura" name="altura" min="0.5" max="3" step="0.01" placeholder="Exemplo: 1.75" required>
+                    <button onclick="calcularIMC()">Calcular</button>
+                    <p id="valorIMC"></p>
+                    <p id="nivelIMC"></p>
+                </section>
+            </article>
+        </section>
+    </main>
+    <footer><p>&copy; 2025 Thyago Gonçalves Moreira - Todos direitos reservados</p></footer>
+    
+</body>
+</html>
